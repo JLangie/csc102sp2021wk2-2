@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html>
+<!--This is the login html for UAT Star Fleet
+    by James Langie
+    JamLangi@uat.edu
+    for CSC102 SP2021 wK2-2-->
+
+<head>
+    <!--Page title and links "loginCode.js" to html.-->
+    <script src="loginCode.js"></script>
+    <title>
+        UAT Star Fleet Login
+    </title>
+</head>
+
+<body>
+   <!--Page display.-->
+    <h1>
+        Welcome UAT Star Fleet Login
+    </h1>
+    <!--Location for displaying login status.-->
+    <p id="loginStatus">
+        Status of login...
+    </p>
+    <br>
+    <!--Form created to submit login credentials. First name, last name, and badge number should be input.-->
+    <form id="creditSubmit" onsubmit="return false">
+        First Name: <input type="text" id="fName" /><br>
+        Last Name: <input type="text" id="lName" /><br>
+        Badge Number: <input type="number" id="badgeID" /><br>
+        <input type="submit" onclick="checkCreds();" />
+    </form>
+
+
+</body>
+
+</html>
